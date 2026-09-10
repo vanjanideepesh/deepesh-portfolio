@@ -26,9 +26,11 @@ A model that used to require a manual, error-prone monthly ritual now updates it
 
 I'd add a lightweight validation check that flags if a rolled-forward total moves more than a threshold percentage month-over-month — a cheap early-warning signal for exactly the kind of silent error this project was built to catch in the first place.
 
-## Why this matters for product thinking, not just VBA
+## Rollout strategy behind this project
 
-The tempting fix here would have been a narrow one: "make the copy-paste step faster." The actual work was **diagnosing why a seven-year-old process kept producing wrong numbers** despite everyone involved being careful — which turned out to be a structural issue (cell-pointers instead of formulas), not a discipline issue. That distinction changes what you build: a faster manual workaround versus a fix that removes the failure mode entirely. Recognizing which one a problem actually is, before writing any code, is the transferable skill here.
+Automating this couldn't be a straight code swap — this model fed a real monthly financial close, and being wrong even once was far more costly than being slow. I treated replacing it as a **launch problem**: how do you get skeptical stakeholders to trust a new system with something they can't afford to get wrong, without just asking them to take it on faith?
+
+See [`artifacts/rollout_strategy.md`](./artifacts/rollout_strategy.md) for the full phased plan — parallel-running the old and new processes for a full close cycle, resolving every discrepancy before trusting either, and getting explicit stakeholder sign-off before the legacy process was retired. The instinct to just ship the fix and move on would have been faster; the instinct to manage it like a rollout, not a release, is what actually got it adopted.
 
 ## Files in this folder
 

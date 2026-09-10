@@ -22,9 +22,11 @@ Rather than one rule, I designed a **layered set of independent red-flag checks*
 
 Each check runs as an independent SQL query across the joined dataset; a transaction accumulates flags rather than being judged by any single rule, which keeps false positives low while surfacing genuinely unusual patterns.
 
-## Why this matters for product thinking, not just SQL
+## Stakeholder communication & decision-framing behind this project
 
-This project is as much about **framing a fuzzy, ambiguous problem into a testable structure** as it is about the queries themselves — "is this fraud" isn't a single query, it's a set of hypotheses that each need their own evidence, and then a way to combine that evidence into a confidence signal a non-technical stakeholder can act on.
+Five independent checks each produce a technically correct result set — none of them, alone, tell a VP what to actually approve. The skill this project actually tested wasn't the SQL, it was **translating flagged rows into a decision someone non-technical could act on**: what happened, why it matters financially, and what specific action is being requested.
+
+See [`artifacts/leadership_summary_example.md`](./artifacts/leadership_summary_example.md) for an illustrative before/after — raw query output versus the leadership-facing narrative it became. This is the same instinct that shows up in customer journey mapping or stakeholder management on the product side: the artifact only has value once it's translated for the audience that has to act on it.
 
 ## Files in this folder
 

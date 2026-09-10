@@ -30,9 +30,11 @@ Beyond the automation itself, the structured approach surfaced a data-integrity 
 
 Given more runway, I'd move this from a batch/folder-driven script to a scheduled pipeline with alerting (e.g., Airflow + Slack notification on mismatch-rate spikes), so someone finds out about a data-integrity issue the day it happens, not the day the monthly reconciliation runs.
 
-## Why this matters for product thinking, not just SQL
+## Roadmap & backlog prioritization behind this project
 
-The technical build was the easy part. The harder call was **deciding what "done" meant** — a naive automation would have just replicated the manual VLOOKUP logic faster. The actual product decision was recognizing that *segmenting* mismatches by root cause (rather than returning one undifferentiated list) was what would actually save review time downstream, and that surfacing the duplicate-join-key and sync-failure bugs as first-class findings — not just noise to filter out — was where the real value was. Automation that's faster but equally opaque isn't actually solving the problem.
+Automating reconciliation wasn't a single build — it was a sequencing decision. With one engineer's time and four+ reconciliation types that all needed the same treatment, I had to decide what to automate first, using the same lens I'd use for any product backlog: **impact (hours saved, error risk) versus effort (shared logic, system complexity) versus urgency (audit exposure).**
+
+See [`artifacts/rollout_prioritization.csv`](./artifacts/rollout_prioritization.csv) for the full breakdown. The short version: **Settlements went first**, not because it was easiest, but because it carried the highest revenue-linked error risk and the most audit scrutiny — the same "fix the highest-exposure item first, even if it's not the cheapest" logic that drives most real prioritization calls. Sales and the Unicommerce sync checks followed together once the core pipeline existed, since they shared most of the underlying logic. Lower-volume marketplace channels were deliberately deferred — not neglected, just correctly sequenced behind higher-impact work.
 
 ## Files in this folder
 
