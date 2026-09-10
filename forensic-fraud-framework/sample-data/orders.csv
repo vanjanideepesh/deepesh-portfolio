@@ -1,0 +1,16 @@
+order_id,original_order_id,is_replacement,sku,original_sku,shipping_address,original_shipping_address,ticket_id_entered,created_by,created_date,original_order_date,approver
+ORD-2001,,0,SKU-A1,SKU-A1,"12 Palm St, Mumbai","12 Palm St, Mumbai",,alice,2026-06-01,2026-06-01,
+ORD-2002,ORD-2001,1,SKU-A1,SKU-A1,"12 Palm St, Mumbai","12 Palm St, Mumbai",TCK-500,priya,2026-06-10,2026-06-01,
+ORD-2003,,0,SKU-B2,SKU-B2,"4 Lake Rd, Pune","4 Lake Rd, Pune",,alice,2026-06-02,2026-06-02,
+ORD-2004,ORD-2003,1,SKU-C3,SKU-B2,"4 Lake Rd, Pune","4 Lake Rd, Pune",TCK-501,rahul,2026-06-15,2026-06-02,
+ORD-2005,,0,SKU-D4,SKU-D4,"9 Hill View, Pune","9 Hill View, Pune",,alice,2026-06-03,2026-06-03,
+ORD-2006,ORD-2005,1,SKU-D4,SKU-D4,"22 New Colony, Pune","9 Hill View, Pune",TCK-502,rahul,2026-06-20,2026-06-03,
+ORD-2007,,0,SKU-E5,SKU-E5,"1 River Rd, Nashik","1 River Rd, Nashik",,alice,2026-06-04,2026-06-04,
+ORD-2008,ORD-2007,1,SKU-E5,SKU-E5,"1 River Rd, Nashik","1 River Rd, Nashik",TCK-999999,rahul,2026-06-25,2026-06-04,
+ORD-2009,,0,SKU-F6,SKU-F6,"5 Green Park, Mumbai","5 Green Park, Mumbai",,alice,2026-06-05,2026-06-05,
+ORD-2010,ORD-2009,1,SKU-F6,SKU-F6,"5 Green Park, Mumbai","5 Green Park, Mumbai",TCK-503,rahul,2026-06-06,2026-06-05,
+ORD-2011,ORD-2009,1,SKU-F6,SKU-F6,"5 Green Park, Mumbai","5 Green Park, Mumbai",TCK-503,rahul,2026-06-07,2026-06-05,
+ORD-2012,,0,SKU-G7,SKU-G7,"3 Old Town, Nagpur","3 Old Town, Nagpur",,alice,2026-01-05,2026-01-05,
+ORD-2013,ORD-2012,1,SKU-G7,SKU-G7,"3 Old Town, Nagpur","3 Old Town, Nagpur",TCK-504,rahul,2026-06-20,2026-01-05,mgr_singh
+ORD-2014,,0,SKU-H8,SKU-H8,"6 East Ave, Nagpur","6 East Ave, Nagpur",,alice,2026-01-10,2026-01-10,
+ORD-2015,ORD-2014,1,SKU-H8,SKU-H8,"6 East Ave, Nagpur","6 East Ave, Nagpur",TCK-505,rahul,2026-06-22,2026-01-10,

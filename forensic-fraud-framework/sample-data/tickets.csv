@@ -1,0 +1,7 @@
+ticket_id,status,created_date,linked_order_id
+TCK-500,resolved,2026-06-09,ORD-2001
+TCK-501,resolved,2026-06-14,ORD-2003
+TCK-502,resolved,2026-06-19,ORD-2005
+TCK-503,resolved,2026-06-05,ORD-2009
+TCK-504,resolved,2026-06-18,ORD-2012
+TCK-505,resolved,2026-06-21,ORD-2014

@@ -1,0 +1,8 @@
+gl_code,gl_name,cost_center,profit_center,debit,credit
+GL-4001,Raw Material Purchases,CC-PROD-01,PC-MFG,150000,0
+GL-4002,Freight Inward,CC-LOG-02,PC-MFG,12000,0
+GL-5001,Sales Revenue,CC-SALES-01,PC-RETAIL,0,410000
+GL-5002,Sales Returns,CC-SALES-01,PC-RETAIL,8000,0
+GL-6001,Salaries - Ops,CC-OPS-03,PC-CORP,95000,0
+GL-6015,Marketing Spend,CC-MKT-01,PC-RETAIL,32000,0
+GL-7099,New Vendor Onboarding Fee,CC-PROC-09,PC-MFG,4500,0
