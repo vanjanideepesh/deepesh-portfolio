@@ -8,19 +8,27 @@ Product Manager with hands-on experience in financial systems, process automatio
 
 ## Projects
 
+**Product strategy & roadmapping**
+
+| Project | What it demonstrates |
+|---|---|
+| [**Product Roadmap & Backlog Prioritization**](./product-roadmap-prioritization) | Turning user research and competitive analysis into a MoSCoW-prioritized backlog, and the sequencing trade-offs behind a two-phase GTM launch |
+
+**Technical deep-dives** (financial systems & data)
+
 | Project | What it demonstrates | Stack |
 |---|---|---|
 | [**Reconciliation Process Automation**](./reconciliation-process-automation) | Turning a 4-hour manual reconciliation into a 4-minute automated pipeline | SQL, Excel VBA, Batch Scripting |
 | [**Balance Sheet & P&L Automation**](./balance-sheet-automation) | Diagnosing and fixing recurring errors in a legacy financial model | Excel VBA, Macros |
 | [**Forensic Fraud-Detection Framework**](./forensic-fraud-framework) | Designing a multi-signal framework to catch process abuse in transaction data | SQL, Data Forensics |
 
-Each folder is a self-contained case study: **problem → approach → what I'd do differently**, plus the actual code/queries behind the work.
+Each folder is a self-contained case study: **problem → approach → what I'd do differently**, plus the actual code/queries/artifacts behind the work. The technical projects each close with a "why this matters for product thinking" section — the point isn't the SQL, it's the judgment behind it.
 
 ---
 
 ## A note on data
 
-All data in this repository is **synthetic**, generated to reflect the shape and scale of real production data without exposing any actual company information. Where a project is based on work done during employment, this repo reconstructs the *methodology and logic* — not the original files, findings, or figures. The Forensic Fraud-Detection Framework in particular intentionally omits real findings, as that work involved an internal investigation; only the detection framework itself is shown, built here as a fresh demonstration.
+All data in this repository is **synthetic**, generated to reflect the shape and scale of real production data without exposing any actual company information. Where a project is based on work done during employment, this repo reconstructs the *methodology and logic* — not the original files, findings, or figures. The Forensic Fraud-Detection Framework in particular intentionally omits real findings, as that work involved an internal investigation; only the detection framework itself is shown, built here as a fresh demonstration. The roadmap/backlog artifact is a representative reconstruction of the actual prioritization process, illustrating real decisions with illustrative (not verbatim) feature names and figures.
 
 ---
 

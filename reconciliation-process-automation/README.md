@@ -30,6 +30,10 @@ Beyond the automation itself, the structured approach surfaced a data-integrity 
 
 Given more runway, I'd move this from a batch/folder-driven script to a scheduled pipeline with alerting (e.g., Airflow + Slack notification on mismatch-rate spikes), so someone finds out about a data-integrity issue the day it happens, not the day the monthly reconciliation runs.
 
+## Why this matters for product thinking, not just SQL
+
+The technical build was the easy part. The harder call was **deciding what "done" meant** — a naive automation would have just replicated the manual VLOOKUP logic faster. The actual product decision was recognizing that *segmenting* mismatches by root cause (rather than returning one undifferentiated list) was what would actually save review time downstream, and that surfacing the duplicate-join-key and sync-failure bugs as first-class findings — not just noise to filter out — was where the real value was. Automation that's faster but equally opaque isn't actually solving the problem.
+
 ## Files in this folder
 
 - `scripts/` — the batch-processing logic (recreated with synthetic data; structure and approach match the original)

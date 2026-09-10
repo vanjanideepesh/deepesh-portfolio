@@ -1,0 +1,11 @@
+feature,category,moscow,rationale,linked_research_input
+Artist self-upload & distribution to streaming platforms,Core Distribution,Must,Without this the product has no reason to exist - it's the core value proposition,"Founder interviews: 40+ independent artists cited manual distribution as their #1 pain point"
+Royalty tracking dashboard,Trust & Retention,Must,Artists' top follow-up question after upload was always 'how do I know I'm getting paid correctly',User interviews: trust in royalty accuracy was the #1 churn risk cited
+Basic analytics (streams, listener geography),Core Distribution,Must,Table-stakes for any distribution platform; artists compare against incumbents on this,Competitive analysis vs. 3 existing distribution platforms
+Playlist pitching tool,Growth,Should,High artist demand but not blocking for MVP launch - distribution has to work first,User interviews: requested by 65% of interviewed artists
+Bulk catalog upload (labels/multi-artist),Core Distribution,Should,Needed to unlock label partnerships but individual-artist flow had to ship first,Stakeholder input: 2 label partners flagged this as a condition for signing
+In-app royalty withdrawal (bank transfer),Trust & Retention,Should,Important but a manual/email-based interim process was viable for MVP,Ops feasibility review - engineering effort vs. manual workaround cost
+Collaborative release splits (multi-artist royalty sharing),Growth,Could,Valuable for a specific artist segment but low volume in early user base,User interviews: relevant to ~15% of interviewed artists
+Social media auto-posting on release day,Growth,Could,"Nice-to-have marketing assist, not core to the distribution value prop",Artist feedback sessions post-signup
+White-label distribution for other platforms,Expansion,Won't (this cycle),Real opportunity but required partnership/legal groundwork outside MVP scope,Market opportunity sizing exercise
+Native mobile app,Platform,Won't (this cycle),Web platform covered the primary use case; mobile was a retention lever, not an activation one,Usage pattern analysis from early beta cohort

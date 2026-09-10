@@ -26,6 +26,10 @@ A model that used to require a manual, error-prone monthly ritual now updates it
 
 I'd add a lightweight validation check that flags if a rolled-forward total moves more than a threshold percentage month-over-month — a cheap early-warning signal for exactly the kind of silent error this project was built to catch in the first place.
 
+## Why this matters for product thinking, not just VBA
+
+The tempting fix here would have been a narrow one: "make the copy-paste step faster." The actual work was **diagnosing why a seven-year-old process kept producing wrong numbers** despite everyone involved being careful — which turned out to be a structural issue (cell-pointers instead of formulas), not a discipline issue. That distinction changes what you build: a faster manual workaround versus a fix that removes the failure mode entirely. Recognizing which one a problem actually is, before writing any code, is the transferable skill here.
+
 ## Files in this folder
 
 - `macros/` — the VBA macro logic (recreated with synthetic data; logic and structure match the original)
