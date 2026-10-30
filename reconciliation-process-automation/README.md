@@ -23,7 +23,7 @@ Beyond the automation itself, the structured approach surfaced a data-integrity 
 | Metric | Before | After |
 |---|---|---|
 | Turnaround time | ~4 hours/month | ~4 minutes/month |
-| Line items reconciled | Manual sample checks | 70,199 (99.99% exact match) |
+| Line items reconciled | Manual VLOOKUP matching across 5 sources | 70,199 at 99.99% accuracy |
 | Mismatch investigation | Undifferentiated list | Auto-segmented by root cause |
 
 ## What I'd do differently
