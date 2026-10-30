@@ -2,7 +2,7 @@
 
 Product Manager with hands-on experience in financial systems, process automation, and data-driven decision-making. This repo showcases three projects referenced on my resume - each rebuilt here with synthetic data so the methodology can be shared openly.
 
-📄 **Resume:** [Product_Manager_deepeshvanjani](resume/Deepesh_Vanjani_Product_Manager_Resume.pdf) · 💼 **LinkedIn:** [linkedin.com/in/deepeshvanjani](https://www.linkedin.com/in/deepeshvanjani/) · 📧 **Contact:** vanjanideepesh@gmail.com
+📄 **Resume:** [Deepesh_Vanjani](resume/Deepesh_Vanjani_Product_Manager_Resume.pdf) · 💼 **LinkedIn:** [linkedin.com/in/deepeshvanjani](https://www.linkedin.com/in/deepeshvanjani/) · 📧 **Contact:** vanjanideepesh@gmail.com
 
 ---
 
