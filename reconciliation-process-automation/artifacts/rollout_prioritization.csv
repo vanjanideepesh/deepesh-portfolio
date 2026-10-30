@@ -1,5 +1,5 @@
 reconciliation_type,systems_involved,monthly_manual_hours,error_risk,priority,rationale
-Settlements,"SAP, OMS/BigQuery, Marketplace portals",~10 hrs,High - highest transaction volume and highest revenue impact per error,P0 - Automated first,Highest hours-saved-per-effort ratio; also the process with the most audit scrutiny given revenue linkage
-Sales,"SAP, OMS/BigQuery, POS",~6 hrs,Medium - high volume but lower per-line financial exposure,P1 - Automated second,Second-highest time cost; shared most of its pipeline logic with Settlements so incremental effort was low once P0 shipped
-Unicommerce sync checks,"OMS, Unicommerce",~3 hrs,Medium - silent sync failures compound if unnoticed,P1 - Automated second,Bundled with Sales rollout since both surfaced from the same root-cause investigation (null date-field issue)
-Marketplace-only channel checks (Blinkit, Amazon Flex, Flipkart),"OMS, Marketplace portals",~2 hrs,Low - lower volume, isolated to specific channels,P2 - Deferred,Lower volume did not justify pulling engineering time from P0/P1; flagged for a future cycle once the core pipeline was stable
+"Settlements","SAP, OMS/BigQuery, Marketplace portals","~10 hrs","High: highest transaction volume and revenue impact per error","P0: automate first","Highest exposure per error, so sequenced first even though not the cheapest"
+"Sales","SAP, OMS/BigQuery, POS","~6 hrs","Medium: high volume, lower per-line financial exposure","P1: automate second","Second-highest time cost; shares most of its logic with the core pipeline"
+"Unicommerce sync checks","OMS, Unicommerce","~3 hrs","Medium: silent sync failures compound if unnoticed","P1: automate second","Bundled with the Sales rollout because both sit on the same extract logic"
+"Marketplace-only channel checks","OMS, Marketplace portals","~2 hrs","Low: lower volume, isolated to specific channels","P2: deferred","Deliberately sequenced behind higher-impact work, not neglected"
