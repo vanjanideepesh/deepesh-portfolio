@@ -1,6 +1,6 @@
 <div align="center">
 
-# Deepesh Vanjani — Product Manager Portfolio
+# Deepesh Vanjani : Product Manager Portfolio
 
 **Product Manager focused on reconciliation, financial controls, and fraud analytics for fintech and payments**
 
